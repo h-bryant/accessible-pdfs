@@ -1,23 +1,35 @@
 # accessible-pdfs
 
-Demonstrations of producing accessible, PDF/A-4f and PDF/UA-2 -compliant
+Demonstrations of producing accessible, PDF/A-4f and PDF/UA-2 compliant
 PDF documents using various LaTeX-related tool chains
 
-## Environment info
 
-Developed using Ubuntu 25.04.  Apt packages that likely need to be installed
-include:
+## Linux environments
 
-* texlive-full
+### Ubuntu 25.04
+
+Packages installed via `apt`  include at least:
+
+* texlive-full (which includes `lualatex` cversion 1.18.0)
 * texlive-fonts-extra
 * texlive-extra-utils
 * pandoc
 
-Additionally, `quarto` was installed using the [deb from their
+Additionally, `quarto` 1.7.3 was installed using the [deb from their
 website](https://quarto.org/docs/get-started/)
 
-For the Jupyter notebook tool chain, jupyterlab 4.4.2 was installed within
-a Python venv.
+For the Jupyter notebook tool chain, jupyterlab 4.4.2 was installed via pip
+within a Python3 venv.
+
+
+## OSX environments
+
+Unkonown.  Can you helop?
+
+
+## Windows environments
+
+Unknown.  Can you help?
 
 
 ## Contributing
@@ -27,6 +39,7 @@ Contributions welcome!  Especially...
 * A solution for the compliance failures on the Adobe "Lbl and LBody" item.
 * Additional tool chains.  An Overleaf approach would probably help a lot of people.
 * Additional LaTeX content features in the example documents.
+* Working environments for OSX and Windows 
 
 
 ## References:
