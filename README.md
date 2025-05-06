@@ -10,7 +10,7 @@ PDF documents using various LaTeX-related tool chains
 
 Packages installed via `apt`  include at least:
 
-* texlive-full (which includes `lualatex` cversion 1.18.0)
+* texlive-full (which includes `lualatex` version 1.18.0)
 * texlive-fonts-extra
 * texlive-extra-utils
 * pandoc
