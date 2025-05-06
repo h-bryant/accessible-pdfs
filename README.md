@@ -24,7 +24,7 @@ within a Python3 venv.
 
 ## OSX environments
 
-Unkonown.  Can you helop?
+Unknown.  Can you helop?
 
 
 ## Windows environments
