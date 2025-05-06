@@ -1,5 +1,4 @@
 # accessible-pdfs
-
 Demonstrations of producing accessible, PDF/A-4f and PDF/UA-2 compliant
 PDF documents using various LaTeX-related tool chains
 
