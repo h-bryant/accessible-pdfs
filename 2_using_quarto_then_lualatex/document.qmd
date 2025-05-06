@@ -1,0 +1,60 @@
+---
+# compile using "quarto render document.qmd --to pdf"
+format:
+  pdf:
+    documentclass: article
+    pdf-engine: lualatex
+    template: template.tex
+    include-in-header:
+        - text: |
+            \title{Demo document} 
+            \usepackage{longtable}
+            \usepackage{booktabs}
+            \usepackage{graphicx}
+            \usepackage[tightLists=true]{markdown}
+title: "Demo document"  # note: title needed both above and here!
+---
+
+
+# Start
+
+Body text.
+
+
+![Portrait of William Shakespeare](shake.jpg){ height="4cm" }
+
+
+```{=latex}
+\tagpdfsetup{table/header-rows={1,2}}
+```
+
+| Name | Value |
+|------|------:|
+| This | 11     |
+| That | 2      |
+
+
+
+# lists
+
+A list:
+
+* Level A1
+  - Level B1
+  - Level B2
+* Level A2
+
+
+
+# Basic mathematical expressions
+
+If $x$ is real, then $x^{2} \geq 0$.
+
+A matrix equation.
+
+$$
+\begin{pmatrix}0&1\\1&0\end{pmatrix}
+\begin{pmatrix}a&b\\c&d\end{pmatrix}
+=
+\begin{pmatrix}c&d\\a&b\end{pmatrix}
+$$

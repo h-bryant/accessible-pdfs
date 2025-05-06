@@ -1,0 +1,31 @@
+% template.tex
+\DocumentMetadata{
+  uncompress,
+  lang        = en,
+  pdfversion  = 2.0,
+  pdfstandard = ua-2,
+  pdfstandard = a-4f, % or a-4
+  testphase   = latest
+}
+\documentclass{article}
+
+% Load your packages
+\usepackage[osf]{libertinus}
+\usepackage{unicode-math}
+
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+% The following is the standard Pandoc LaTeX template (excerpt).
+% You can get the full default template via:
+%   pandoc -D latex > default.latex
+% and merge it here, or simply drop in the body placeholder:
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+\begin{document}
+$body$
+\end{document}
