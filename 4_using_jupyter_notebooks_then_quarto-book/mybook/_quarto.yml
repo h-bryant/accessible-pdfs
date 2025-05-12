@@ -1,0 +1,34 @@
+project:
+  type: book
+
+book:
+  title: "mybook"
+  author: "Norah Jones"
+  date: "5/12/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - document.ipynb
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    include-in-header:
+      - text: |
+         \usepackage{longtable}
+         \usepackage{booktabs}
+         \usepackage{graphicx}
+         \usepackage[tightLists=true]{markdown}
+         \usepackage[osf]{libertinus}
+         \usepackage{unicode-math}
+         \providecommand{\tightlist}{%
+           \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+         \title{Demo document} 
+    pdf-engine: lualatex
+    documentclass: book
+
